@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Please enter your age!");
+        if(age<=17){
+            alert("You are a child go play somewhere else");
+        }else if (age>=18 && age<=40){
+            alert("You are eligible");
+        }else {
+            alert("You are too old to be playing around");
+
+             let beverage = prompt("(Options: 1.Coke  2.Wine  3.Beer)");
+              if(age>=18 && age<25){
+                if(beverage === "1"){
+                    alert("It is available");
+                }else{
+                    alert("It's not available for you");
+                }
+            }else if (age>25 && age<=35){
+                if(beverage === "2" || beverage === "1"){
+                    alert("It is available");
+                }else{
+                    alert("It's not available for you");
+                }
+            }else if (age>35 && age<=40) {
+                alert("You are eligible");
+                if(beverage === "1" || beverage === "2" || beverage === "3"){
+                    alert("Everything is available");
+                }else { 
+                    alert("Only options is 1,2 and 3. You need glasses");
+                }
+            }else {
+                alert("nothing for you ");
+            }
+            }
+
+        
+        
+    </script>
+</body>
+</html>

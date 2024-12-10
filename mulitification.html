@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Multiplication of Two Numbers</h2>
+    <blockquote>
+        <input type="First Num" id="num1"><br><br>
+        <input type="second Num" id="num2"><br><br>
+        <button onclick="mulnumber()">Multiply</button><br><br>
+        <input type="text" id="result" disabled>
+    </blockquote>
+    <script>
+        function mulnumber(){
+            let x=parseInt(document.getElementById("num1").value);
+            let y=parseInt(document.getElementById("num2").value);
+            let rlt = x*y
+            document.getElementById("result").value = rlt
+        }
+    </script>
+</body>
+</html>
