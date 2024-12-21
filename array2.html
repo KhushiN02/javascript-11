@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student List</title>
+  <style>
+    .box {
+      width: 250px;
+      height: 250px;
+      background: blueviolet;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid red;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="result"></div>
+  <script>
+    let student = [
+      ['Aakriti', 'Binti', 'Kamala', 'Laxmi', 'Aishwarya'],
+      ['Ram-Maya', 'Suga', 'Apshara', 'Kritika', 'Karuna'],
+      ['Rm', 'taehyung', 'kook', 'maya', 'Ram']
+    ];
+
+    let resultDiv = document.getElementById('result');
+
+    student.flat().forEach(name => {
+      let box = document.createElement('div');
+      box.className = 'box';
+      box.textContent = name;
+      resultDiv.appendChild(box);
+    });
+  </script>
+</body>
+
+</html>
